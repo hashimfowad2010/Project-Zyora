@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surveys | Zyora Nova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --dark-green: #1b3022; 
+            --mid-green: #4f6d7a; 
+            --light-green: #f0f4f1; 
+            --accent-green: #8da290; 
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+            background-color: var(--light-green); 
+            color: var(--dark-green); 
+        }
+
+        /* NAVIGATION */
+        nav { 
+            background: var(--dark-green); 
+            color: #fff; 
+            padding: 1rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        .logo-area img { 
+            height: 40px; 
+            border-radius: 15px;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 500; 
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 40px 0;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+
+        /* 3-COLUMN SURVEY BLOCK */
+        .survey-section { 
+            display: grid; 
+            grid-template-columns: 150px 1fr 150px; 
+            gap: 25px; 
+            padding: 2rem 5%; 
+            max-width: 1300px; 
+            margin: 0 auto 60px auto; 
+        }
+
+        .sidebar-box { 
+            background: white; 
+            padding: 15px; 
+            border-radius: 12px; 
+            height: fit-content; 
+            font-size: 0.85rem; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            border-top: 3px solid var(--accent-green);
+        }
+
+        .sidebar-box h4 { 
+            margin-top: 0; 
+            color: var(--mid-green); 
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .graph-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+
+        .graph-card h3 { 
+            margin-top: 0; 
+            font-family: 'Playfair Display', serif; 
+            color: var(--dark-green);
+            line-height: 1.4;
+        }
+
+        .graph-img { 
+            border-radius: 12px; 
+            width: 300px;
+            height: 300px;
+            margin: 20px 0;
+            border: 1px solid #f0f0f0;
+        }
+
+        .data-summary {
+            background: var(--light-green);
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo-area"><img src="logo.jpeg" alt="Logo"><strong>Zyora Nova</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="team.html">Team</a>
+    </div>
+</nav>
+
+<h1 class="page-title">Community Insights</h1>
+
+<div class="survey-section">
+    <aside class="sidebar-box">
+        <h4>Data Range</h4>
+        <p>Responses: 100+<br>Target: Lahori citizens</p>
+    </aside>
+    <main class="graph-card">
+        <h3>1. Do you agree that unsafe food processing exists in Pakistan?</h3>
+        <img src="graph1.png" alt="Statistics Graph" class="graph-img">
+        <div class="data-summary">
+            <strong>Breakdown:</strong> Strongly Agree (26.3%), Agree (47.4%), Neutral (15%), Disagree (4.5%), Strongly Disagree (6.8%)
+        </div>
+    </main>
+    <aside class="sidebar-box">
+        <h4>Takeaway</h4>
+        <p>The majority agree, highlighting the existence of the issue.</p>
+    </aside>
+</div>
+
+<div class="survey-section">
+    <aside class="sidebar-box">
+        <h4>Data Range</h4>
+        <p>Margin of Error: +/- 0.5%</p>
+    </aside>
+    <main class="graph-card">
+        <h3>2. How serious do you think is the issue of unsafe food processing?</h3>
+        <img src="graph2.png" alt="Statistics Graph" class="graph-img">
+        <div class="data-summary">
+            <strong>Breakdown:</strong> Very serious (60.9%), Quite serious (21.1%), Neutral (12.8%), Not very serious (3%), Not serious (2.3%)
+        </div>
+    </main>
+    <aside class="sidebar-box">
+        <h4>Takeaway</h4>
+        <p>The majority says very serious, highlighting the seriousness of the issue.</p>
+    </aside>
+</div>
+
+<div class="survey-section">
+    <aside class="sidebar-box">
+        <h4>Data Range</h4>
+        <p>Source: Direct Community Form</p>
+    </aside>
+    <main class="graph-card">
+        <h3>3. Have you ever been affected by unsafe processed food?</h3>
+        <img src="graph3.png" alt="Statistics Graph" class="graph-img">
+        <div class="data-summary">
+            <strong>Breakdown:</strong> Yes (53.4%), Maybe (26.3%), No (20.3%)
+        </div>
+    </main>
+    <aside class="sidebar-box">
+        <h4>Takeaway</h4>
+        <p>Most of the people have actually been a victim of this issue</p>
+    </aside>
+</div>
+
+</body>
+</html>

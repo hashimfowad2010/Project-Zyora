@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews | Zyora Nova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --dark-green: #1b3022; 
+            --mid-green: #4f6d7a; 
+            --light-green: #f0f4f1; 
+            --accent-green: #8da290; 
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+            background-color: var(--light-green); 
+            color: var(--dark-green); 
+        }
+
+        /* NAVIGATION */
+        nav { 
+            background: var(--dark-green); 
+            color: #fff; 
+            padding: 1rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        .logo-area img { 
+            height: 40px; 
+            border-radius: 15px;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; 
+            font-weight: 500; 
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 40px 0;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 2.5rem;
+        }
+
+        /* 3-COLUMN INTERVIEW BLOCK */
+        .interview-section { 
+            display: grid; 
+            grid-template-columns: 150px 1fr 150px; 
+            gap: 25px; 
+            padding: 2rem 5%; 
+            max-width: 1300px; 
+            margin: 0 auto 80px auto; 
+        }
+
+        .sidebar-box { 
+            background: white; 
+            padding: 15px; 
+            border-radius: 10px; 
+            height: fit-content; 
+            font-size: 1rem; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            border-top: 3px solid var(--accent-green);
+        }
+
+        .sidebar-box h4 { 
+            margin-top: 0; 
+            color: var(--mid-green); 
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .video-card { 
+            background: white; 
+            padding: 30px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+
+        .video-card h3 { 
+            margin-top: 0; 
+            font-family: 'Playfair Display', serif; 
+            color: var(--dark-green);
+        }
+
+        video { 
+            border-radius: 12px; 
+            width: 100%;
+            background: #000;
+        }
+
+        .video-caption {
+            margin-top: 15px;
+            font-style: italic;
+            color: var(--mid-green);
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo-area"><img src="logo.jpeg" alt="Logo"><strong>Zyora Nova</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="team.html">Team</a>
+    </div>
+</nav>
+
+<h1 class="page-title">Various Consultations</h1>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>Rajisthani is a local restaurant and a small business which is located in the city of Lahore in Joar Town.</p></aside>
+    <main class="video-card">
+        <h3>1. Rajisthani Restaurant</h3>
+        <video controls><source src="interview1.mp4" type="video/mp4"></video>
+        <p class="video-caption">What we did: We told them the importance of wearing gloves and changing oil on regular basis which made them realize how necessary it is to ensure food safety and evnetually gave them some gloves which the wore on sopt and assured that they had realized the depth of the topic.</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>The processing of food here is not very safe as the restaurant uses the same oil multiple times and donot emphasizes their chefs to wear gloves and hair caps</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>The interview was conducted from Pakistan Food Authority which monitors the food processing in Pakistan.</p></aside>
+    <main class="video-card">
+        <h3>2. Governmental Interview</h3>
+        <video controls><source src="interview2.mp4" type="video/mp4"></video>
+        <p class="video-caption">What we did: We asked the government officials to also keep a check and balance on not only just the restaurants but also on the local stalls.</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We found how government of Pakistsn tackles this issue. the representative told that first they issue warnings to unsustainable food processors, then they charge them heavy fines and finally they imprison themif the activity continues.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>This interview was conducted from a random teenager of our community to see what is the perspective of teens of our community in accordance to this topic.</p></aside>
+    <main class="video-card">
+        <h3>3. Interview of a teen citizen</h3>
+        <video controls><source src="interview3.mp4" type="video/mp4"></video>
+        <p class="video-caption">What we did: We asked the teenagers to spread awareness around them and to make the stall owners realize how their temporary profit of money is causing long term health issues to the people of their community.</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We found that the teens of our community think that eating from local stalls like the ones present in Barkat market and in sadar bazar is the most unsafe food we can get.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>This interview was conducted from a random adult of our community to see what is the perspective of adults of our community in accordance to this topic.</p></aside>
+    <main class="video-card">
+        <h3>4. Interview of an adult citizen</h3>
+        <video controls><source src="interview4.mp4" type="video/mp4"></video>
+        <p class="video-caption">What we did: We educated them about how the use of oil and and following of Hygeine rules during the food processing also greatly contributes to the safety of ood and that how they can spread awareness about this issue by educating the same thing to other adults near them.</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We found that the adults of our community are not concerned about how the food is processed but about how the food is treated after it is processed as their concern was that the dust in the air is what makes the food unsafe.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>This interview was conducted to get to know from a doctor's point of view, how serious this issue was and what impacts it can have on health.</p></aside>
+    <main class="video-card">
+        <h3>5. A Doctor's thoughts</h3>
+        <video controls><source src="interview5.mp4" type="video/mp4"></video>
+        <p class="video-caption">We took into account whatever we learned and started spreading awarness about the diseases this cause so that no more people get affected from it</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We got to know that having unsafely processed food mean the food is not beig difested completely which means that it can cause several food born disease which can even lead to organ infections.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>This interview was conducted to get to know from a health specialist's point of view, how serious this issue was and what impacts it can have on health.</p></aside>
+    <main class="video-card">
+        <h3>6. A specialist's thoughts</h3>
+        <video controls><source src="interview6.mp4" type="video/mp4"></video>
+        <p class="video-caption">We took into account whatever we learned and started spreading awarness about the diseases this cause so that no more people get affected from it</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We got to know that having unsafely processed food mean the food is not beig difested completely which means that it can cause several food born disease which can even lead to organ infections.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>This was not just an interview but a walkthrough of how the food should be actually processed before being used by the consumers</p></aside>
+    <main class="video-card">
+        <h3>7. Industrial interview</h3>
+        <video controls><source src="interview8.mp4" type="video/mp4"></video>
+        <p class="video-caption">We learned what are the protocols of safe food processing and how are they implememnted in rela life. We toured the processing units and saw how the protocols are ensured to be followed</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We found out that before processing any sort of food, chemical tests are to be done for the raw materials that will be used throughout the processing. Then we got to know some SDGs and how to allign with them during food processing.</p></aside>
+</div>
+
+<div class="interview-section">
+    <aside class="sidebar-box"><h4>About</h4><p>Soda Voda is a local shop in Lahore where beverages are locally made and served to the customers there.</p></aside>
+    <main class="video-card">
+        <h3>8. Soda Voda</h3>
+        <video controls><source src="interview9.mp4" type="video/mp4"></video>
+        <p class="video-caption">What we did: We told them how contagious diseases can spread from one person to another through drinking in the same bottle.</p>
+    </main>
+    <aside class="sidebar-box"><h4>Findings</h4><p>We found that they used to reuse bottles which is a very common activiyt at bevarages places but the problem is that before reusing the bottled, the bottles are not disinfected which means transfer of germs.</p></aside>
+</div>
+
+</body>
+</html>

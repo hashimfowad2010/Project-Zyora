@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meet the Team | Zyora Nova</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        :root { 
+            --dark-green: #1b3022; 
+            --mid-green: #4f6d7a; 
+            --light-green: #f0f4f1; 
+            --accent-green: #8da290; 
+        }
+
+        body { 
+            font-family: 'Montserrat', sans-serif; 
+            margin: 0; 
+            background-color: var(--light-green); 
+            color: var(--dark-green); 
+        }
+        
+        /* NAVIGATION */
+        nav { 
+            background: var(--dark-green); 
+            color: #fff; 
+            padding: 1rem 5%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo-area { 
+            display: flex; 
+            align-items: center; 
+            gap: 10px; 
+        }
+
+        .logo-area img { 
+            height: 40px; 
+            border-radius: 15px;
+        }
+
+        nav a { 
+            color: white; 
+            text-decoration: none; 
+            margin-left: 20px; font-weight: 500; 
+        }
+
+        /* GRID LAYOUT (Slim sidebars for References) */
+        .main-grid { 
+            display: grid; 
+            grid-template-columns: 150px 1fr 150px; 
+            gap: 30px; 
+            padding: 2rem 5%; 
+            max-width: 1400px; 
+            margin: auto; 
+        }
+
+        .sidebar { 
+            background: white; 
+            padding: 15px; 
+            border-radius: 15px; 
+            height: fit-content; 
+            font-size: 0.8rem; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            border-top: 3px solid var(--accent-green);
+        }
+
+        .content-box { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+        }
+        
+        h1 { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; font-size: 2.5rem; margin-bottom: 40px; }
+
+        /* THE BIG GROUP PHOTO */
+        .group-photo {
+            width: 100%;
+            border-radius: 15px;
+            margin-bottom: 60px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        /* TEAM MEMBER ROWS */
+        .member-row {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .member-row:last-child { border-bottom: none; }
+
+        .member-row img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-green);
+            flex-shrink: 0;
+        }
+
+        .member-info h3 { 
+            margin: 0; 
+            color: var(--dark-green); 
+            font-family: 'Playfair Display', serif; 
+            font-size: 1.6rem;
+        }
+
+        .member-info span { 
+            color: var(--mid-green); 
+            font-size: 0.9rem; 
+            font-weight: bold; 
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .member-info p { margin-top: 12px; font-size: 0.95rem; line-height: 1.6; }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo-area"><img src="logo.jpeg" alt="Logo"><strong>Zyora Nova</strong></div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="surveys.html">Surveys</a>
+        <a href="solutions.html">Solutions</a>
+        <a href="team.html">Team</a>
+    </div>
+</nav>
+
+<div class="main-grid">
+    <aside class="sidebar">
+        <h4>Project Credits</h4>
+        <p>Organization: Zyora Nova</p>
+        <p>Location: Urban Research Lab</p>
+        <hr style="border: 0.5px solid #eee">
+        <p>All portraits taken during the 2026 Phase 1 review.</p>
+    </aside>
+
+    <main class="content-box">
+        <h1>The Faces of Innovation</h1>
+        
+        <img src="group-photo.jpeg" alt="The Zyora Nova Team" class="group-photo">
+
+        <div class="member-row">
+            <img src="member1.jpeg" alt="Team Member 1">
+            <div class="member-info">
+                <h3>Hassan Usman</h3>
+                <span>Head Executive</span>
+                <p>The Team Lead of Project Zyora! An extrovert with a passion for football and a proud Hafiz, known around campus simply as Hafiz Sahab, Hassan is the driving force behind our social media pages, making sure our message about food safety reaches everyone with style and impact. Known as the aesthetic and visionary mind of the team, he blends leadership with innovation to keep Zyora’s presence vibrant, inspiring and engaging.</p>
+            </div>
+        </div>
+
+        <div class="member-row">
+            <img src="member2.jpeg" alt="Team Member 2">
+            <div class="member-info">
+                <h3>Hashim Fowad</h3>
+                <span>Lead Interviewer</span>
+                <p>The powerhouse of Project Zyora! Known as the bulked guy of the team, he brings confidence and charm wherever he goes. With his strong communication skills sharpened through years of debating, Hashim took the lead in conducting major interviews for our project, ensuring every voice and perspective was heard.</p>
+            </div>
+        </div>
+
+        <div class="member-row">
+            <img src="member3.jpeg" alt="Team Member 3">
+            <div class="member-info">
+                <h3>Ghulam Mustafa</h3>
+                <span>Research Director</span>
+                <p>Known as Gulli a valued member of Project Zyora! Known for his kind and soft-spoken nature, he played a key role in creating the questionnaires which assisted us in our interviews. With his thoughtful approach and calm personality, Gulli keeps the team grounded and focused.</p>
+            </div>
+        </div>
+
+        <div class="member-row">
+            <img src="member4.jpeg" alt="Team Member 4">
+            <div class="member-info">
+                <h3>Abdur Rehman Chaudhary</h3>
+                <span>Graphic Designer</span>
+                <p>The quiet force of Project Zyora! An introvert with a passion for cricket,he brings precision and innovation to the team. Chaudhary expertly writes project documents and handles graphic designing to ensure that our research and visuals are clear, engaging and professional.</p>
+            </div>
+        </div>
+
+        <div class="member-row">
+            <img src="member5.jpeg" alt="Team Member 5">
+            <div class="member-info">
+                <h3>Umar Mansha</h3>
+                <span>Media Director</span>
+                <p>The sharp mind behind the lens at Project Zyora! Also known as the CPU of the school recognized for his high IQ and signature glasses, Umar handles the filming of interviews and captures key moments throughout our journey. His precision and attention to detail ensure every shot tells the story of our mission.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <aside class="sidebar">
+        <h4>References</h4>
+        <p>Ethics Board: Verified</p>
+        <p>Publication: Feb 2026</p>
+        <hr style="border: 0.5px solid #eee">
+        <p style="font-style: italic;">"Great things in business are never done by one person; they're done by a team of people."</p>
+    </aside>
+</div>
+
+</body>
+</html>
